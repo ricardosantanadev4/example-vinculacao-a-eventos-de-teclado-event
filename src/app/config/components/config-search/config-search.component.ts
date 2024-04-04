@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-config-search',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./config-search.component.scss']
 })
 export class ConfigSearchComponent {
+  @Output() newConfigEnventEmmit = new EventEmitter<Event>();
 
+  onKeydown(eventKeydown: Event) {
+    // console.log(eventKeydown);
+    return this.newConfigEnventEmmit.emit(eventKeydown);
+  }
 }

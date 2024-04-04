@@ -1,7 +1,8 @@
-<button mat-icon-button class="example-icon" aria-label="Pesquizar config">
+<button mat-icon-button class="spaceButton" aria-label="Pesquizar config">
     <mat-icon>search</mat-icon>
 </button>
+
 <mat-form-field>
-    <mat-label>Search</mat-label>
-    <input matInput>
+    <mat-label style="color: white; ">Search:</mat-label>
+    <input matInput (Keydown.enter)="onKeydown($event)" style="color: white;">
 </mat-form-field>
