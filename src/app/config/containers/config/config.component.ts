@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./config.component.scss']
 })
 export class ConfigComponent {
-  showConfig(event: Event) {
+  showConfig(event: string) {
     console.log(event);
   }
 }
