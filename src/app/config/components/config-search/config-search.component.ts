@@ -15,5 +15,4 @@ export class ConfigSearchComponent {
     this.newConfigEnventEmmit.emit(inputValue);
     return (eventKeydown.target as HTMLInputElement).value;
   }
-
 }

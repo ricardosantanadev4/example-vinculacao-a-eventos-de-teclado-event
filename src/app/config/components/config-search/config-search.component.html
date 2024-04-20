@@ -6,6 +6,7 @@
     <mat-icon>search</mat-icon>
 </button>
 
+<!-- (input)="inputText.text=onKeydown($event)" envia letra por letra para inputText.text -->
 <mat-form-field>
     <mat-label style="color: white; ">Search:</mat-label>
     <input matInput [value]="inputText.text" (input)="inputText.text=onKeydown($event)"
